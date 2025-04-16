@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+    <style>
+        img.w800 {
+            width:300px;
+        }
+
+        img.wmax {
+            max-width: 100%;
+            height: auto;
+        }
+        img.h800 {
+            height:auto ;
+        }
+        figure {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 20px;
+            border:5px dashed black ;
+        }
+    
+    </style>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #000000 #ff0000 );
+            min-height: 100vh;
+        }
+
+        h1 {color: #000000;
+            font-size: 2.5em;
+        font-weight: bold;
+        }
+
+        p {
+            color: #0c0b0b;
+            font-size: 30px;
+            line-height: 1.5;
+        }
+        i{
+            color: #000000;
+            font-size: 100px;
+            
+        }               
+        .caixa {
+            background-color: #f8f9fa;
+            border: 3px dashed rgb(0, 0, 0);
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="text-primary"><i class="fa-solid fa-face-smile icon"></i>Python_UC02</h1>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section id="section1">
+            <h2>Seçao 1:Introduçao</h2>
+
+            <p>Esta e a primeira seção da pagina. <br>
+                Aqui voce pode adicionar informações
+                introdutorias</p>
+        </section>
+        <section id="section1" >
+           <h1> Imagem Original </h1>
+           <img src="img/paisagem-original.jpg"
+                alt="Por do sol"
+                width="800px">
+        </section>
+
+        <section id="section2" >
+            <h1> Imagem com 300px de largura </h1>
+            <img src="img/flowers-5596564_1920.png"
+                 alt="Flores"
+                class="w800">
+
+        <figure>
+            <img src="img/amsterdam-9332884_1280.jpg" 
+            alt="Casa no Mar"
+            class="wmax">
+            <figcaption>
+                Casa no Mar
+            </figcaption>
+        </figure>
+        
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer" class="container text-center">
+        <p class="text-muted"><i class="far fa-copyright icon"></i> 2023 - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
