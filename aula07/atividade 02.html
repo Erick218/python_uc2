@@ -16,7 +16,10 @@
     <!-- Estilos personalizados (opcional) -->
     <style>
         body {
-            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
         header {
             margin-bottom: 20px;
@@ -47,125 +50,127 @@
         tr:nth-child(even) {
         background-color: #f9f9f9;
         }
-
-        tr:hover {
-        background-color: #eaeaea;
+        .card {
+            background-color: #000;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        input[type="text"] {
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #555;
+        }
+        input::placeholder {
+            color: #ccc;
+        }
+        a   {
+            color: #0d6efd;
+        }
+        a:hover {
+            color: #66b2ff;
+        }
+        .footer-links li {
+            list-style: none;
+            margin-bottom: 5px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <img src="Img/Logo.jpg" style="width: 150px; height: 50px;" alt="">
+        <a href="file:///C:/python_uc2/python_uc2/aula07/atividade%2002.html"><i class="bi bi-house-fill"></i>Início</a>
+        <a href="file:///C:/python_uc2/python_uc2/aula07/Informa%C3%A7%C3%B5es%20sobre%20a%20empresa.html">Sobre</a>
+        <a href="file:///C:/python_uc2/python_uc2/aula07/Cadastro.html"><i class="bi bi-person-circle"></i> Usuario</a>
+      </div>
 
-    <!-- Cabeçalho -->
-    <header class="container">
-        <div class="d-flex justify-content-between align-items-center">
-            <h1 class="text-center"><i class="bi bi-alipay"></i>Loja de Camisetas</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a href="cadastro-cliente.html" class="nav-link"><i class="fa-solid fa-user"></i> Perfil</a></li>
-                    <li class="nav-item"><a href="produtos.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i> Compras</a></li>
-                </ul>
-            </nav>  
-        
+<main class="container py-5">
+  <section id="section1" class="mb-5">
+    <h2 class="text-success"><i class=""></i> Catálogo</h2>
+    <p class="lead">Encontre sua camiseta favorita</p>
+
+    <div class="row mb-4">
+      <div class="col-md-10">
+        <input type="text" id="text" name="nome" class="form-control" placeholder="O que está procurando?">
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-success w-100">
+          <i class="fas fa-search"></i> Buscar
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/350.jpg" class="card-img-top" alt="Camisa da Sponsor">
+          <div class="card-body">
+            <h5 class="card-title">Camisa da Sponsor</h5>
+            <p>Tamanhos: M, G, GG</p>
+            <p class="card-text">R$ 99,90</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
         </div>
-    </header>
+      </div>
 
-    <!-- Conteúdo principal -->
-    <main class="container">
-        <section id="section1" class="mb-5">
-            <h2 class="text-success"><i class=""></i>Catalogo</h2>
-            <p class="lead"></p>
-        
-            <div class="row">
-                <div class="col-md-10">    
-                <input type="text" id="text" name="nome" class="w-100" placeholder="Oque está procurando?">
-                </div>
-            
-                <div class="col-md-2">
-                    <button>
-                        <i class="fas fa-search"></i> Buscar
-                      </button>
-                </div>
-            </div>
-        <table>
-            <thead>
-                <tr>
-                    <!--CATALOGO-->
-                    <div><th>Produto</th><div>
-                    <div><th>Descrição</th></div>
-                    <div><th>Preço</th></div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Img/Nike.jpg" class="card-img-top" alt="Camisa da Nike">
+          <div class="card-body">
+            <h5 class="card-title">Camisa da Nike</h5>
+            <p>Tamanhos: P, M, G</p>
+            <p class="card-text">R$ 99,90</p>
+            <a href="Produto.html" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
 
-                </tr>
-            </thead>
-            
-            <tbody>
-            <!--PRODUTOS-->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Img/Puma.jpg" class="card-img-top" alt="Camisa da Puma">
+          <div class="card-body">
+            <h5 class="card-title">Camisa da Puma</h5>
+            <p>Tamanhos: M, G, GG</p>
+            <p class="card-text">R$ 99,90</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <td><img src="https://imgnike-a.akamaihd.net/200x200/012937ID.jpg" alt=""></td>
-                <td>
-                    <p>Camisa da Nike</p>
-                    <p>P,M,G</p>
-                    <p>Preço</p>
-                </td>
-                
-                <td>
-                    R$ 150,00
-                </td>
-
-                <tr>
-                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlY6t_Q7sX-HH11ONpMHVEIb1085OfhEop4A&s" alt=""></td>
-                <td>
-                    <p>Camisa da Adidas</p>
-                    <p>P,M,G,GG</p>
-                    <p>Preço</p>
-                </td>
-
-                <td>R$ 150,00</td>
-                </tr>
-
-                <tr>
-                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd9csygYjhsfLq2JDo2F-gCFr3_NIR7cGYVA&s" alt=""></td>
-                    <td>
-                        <p>Camisa da Puma</p>
-                        <p>P,M,G</p>
-                        <p>Preço</p>
-                    </td>
-
-
-                    <td>R$150,00</td>
-            </tr>
-            <tbody>
-        </table>
-        
-        </section>
-
-        <!--INFORMAÇÕES SOBRE A EMPRESA-->
-        <article class="card"></article>
-        
-        <h3 class="text-center">Sobre Nós</h3>
-        
-        <div class="card-body">
-             <div class="row">
-                <div class="col-md-5">
-                    <li>Links Rapidos</li>
-                    <li>Sobres nos</li>
-                    <li>Faq</li>
-                    <li>Ajuda</li>
-                    <li>Meu Acesso</li>
-                    <li>Blog</li>
-                </div>
-                               
-                <div class="col-md-6">
-                    <li><i class="fa-solid fa-phone"></i> Contatos: +55(24) 2233-4455
-                    <li><i class="fa-solid fa-envelope"></i> contato@Camisetas.github.io
-                </div>
-            </div>                                  
-    </article>
-    </main>
-
-    <!-- Rodapé -->
-    <footer id="" class="">
-        <p class=""><i class=""></i> </p>
-    </footer>
+  <!-- INFORMAÇÕES SOBRE A EMPRESA -->
+  <article class="card p-4 mt-5">
+    <h3 class="text-center">Sobre Nós</h3>
+    <div class="row mt-3">
+      <div class="col-md-5 footer-links">
+        <ul>
+          <li>Links Rápidos</li>
+          <li><a href="file:///C:/python_uc2/python_uc2/aula07/Informa%C3%A7%C3%B5es%20sobre%20a%20empresa.html">Sobre Nós</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Meu Acesso</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> Contatos: +55 (24) 2233-4455</li>
+          <li><i class="fa-solid fa-envelope"></i> contato@camisetas.github.io</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</main>
 
     <!-- Bootstrap JS e dependências -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

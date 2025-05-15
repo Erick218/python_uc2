@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {   
+            background-color: #f4f4f4;
+        }
+
+        tr:nth-child(even) {
+        background-color: #f9f9f9;
+        }
+        .card {
+            background-color: #000;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        input[type="text"] {
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #555;
+        }
+        input::placeholder {
+            color: #ccc;
+        }
+        a   {
+            color: #0d6efd;
+        }
+        a:hover {
+            color: #66b2ff;
+        }
+        .footer-links li {
+            list-style: none;
+            margin-bottom: 5px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="Img/Logo.jpg" style="width: 150px; height: 50px;" alt="">
+        <a href="file:///C:/python_uc2/python_uc2/aula07/atividade%2002.html">Início</a>
+        <a href="file:///C:/python_uc2/python_uc2/aula07/Informa%C3%A7%C3%B5es%20sobre%20a%20empresa.html">Sobre</a>
+        <a href="file:///C:/python_uc2/python_uc2/aula07/Cadastro.html"><i class="bi bi-person-circle"></i> Usuario</a>
+      </div>
+
+<main class="container py-5">
+  <section id="section1" class="mb-5">
+    <h2 class="text-success"><i class=""></i> Catálogo</h2>
+    <p class="lead">Encontre sua camiseta favorita</p>
+
+    <div class="row mb-4">
+      <div class="col-md-10">
+        <input type="text" id="text" name="nome" class="form-control" placeholder="O que está procurando?">
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-success w-100">
+          <i class="fas fa-search"></i> Buscar
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/350.jpg" class="card-img-top" alt="Camisa da Sponsor">
+          <div class="card-body">
+            <h5 class="card-title">Camisa da Sponsor</h5>
+            <p>Tamanhos: M, G, GG</p>
+            <p class="card-text">R$ 99,90</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Img/Nike.jpg" class="card-img-top" alt="Camisa da Nike">
+          <div class="card-body">
+            <h5 class="card-title">Camisa da Nike</h5>
+            <p>Tamanhos: P, M, G</p>
+            <p class="card-text">R$ 99,90</p>
+            <a href="Produto.html" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Img/Puma.jpg" class="card-img-top" alt="Camisa da Puma">
+          <div class="card-body">
+            <h5 class="card-title">Camisa da Puma</h5>
+            <p>Tamanhos: M, G, GG</p>
+            <p class="card-text">R$ 99,90</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFORMAÇÕES SOBRE A EMPRESA -->
+  <article class="card p-4 mt-5">
+    <h3 class="text-center">Sobre Nós</h3>
+    <div class="row mt-3">
+      <div class="col-md-5 footer-links">
+        <ul>
+          <li>Links Rápidos</li>
+          <li><a href="file:///C:/python_uc2/python_uc2/aula07/Informa%C3%A7%C3%B5es%20sobre%20a%20empresa.html">Sobre Nós</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Meu Acesso</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> Contatos: +55 (24) 2233-4455</li>
+          <li><i class="fa-solid fa-envelope"></i> contato@camisetas.github.io</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</main>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
